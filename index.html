@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
-    <div id="buttons">
-        <button id="play-rock">Kamień</button>
-        <button id="play-paper">Papier</button>
-        <button id="play-scissors">Nożyce</button>
+    <div class="countWinns">
+        <div id="computerScore">0</div>
+        <img src="https://media.istockphoto.com/id/1269211670/pl/wektor/rock-paper-scissors-zestaw-ikon-cz%C4%99%C5%9Bci-cia%C5%82a.jpg?s=612x612&w=0&k=20&c=4GftM7yboqusgPvPXxluKyeXoR1n0tbs8F37puP_k58=" alt="game">
+        <div id="playerScore">0</div>
+    </div>
+    <div id="buttons" class="gameButtons">
+        <button id="play-rock" type="button">Kamień</button>
+        <button id="play-paper" type="button">Papier</button>
+        <button id="play-scissors" type="button">Nożyce</button>
     </div>
     <div id="messages"></div>
+
 </div>
 <script src="js/functions.js"></script>
 <script src="js/script.js"></script>

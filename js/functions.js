@@ -4,6 +4,13 @@ function printMessage(msg){
     document.getElementById('messages').appendChild(div);
 }
 
+function scoreCounter(scoreCp, scorePl){
+    let cp = document.getElementById('computerScore');
+    let pl = document.getElementById('playerScore');
+    cp.innerHTML = scoreCp;
+    pl.innerHTML = scorePl;
+}
+
 function clearMessages(){
     document.getElementById('messages').innerHTML = '';
 }
@@ -23,8 +30,10 @@ function getMoveName(argMoveId) {
 function displayResult(argComputerMove, argPlayerMove) {
     if ((argComputerMove == 'kamień' && argPlayerMove == 'papier') || (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') || (argComputerMove == 'papier' && argPlayerMove == 'nożyce')) {
         printMessage('Ty wygrywasz!');
+        counerPL++
     } else if ((argComputerMove == 'nożyce' && argPlayerMove == 'papier') || (argComputerMove == 'papier' && argPlayerMove == 'kamień') || (argComputerMove == 'kamień' && argPlayerMove == 'nożyce')) {
         printMessage('Ja wygrywam!');
+        counterCP++
     } else if (argComputerMove == argPlayerMove) {
         printMessage('Nic z tego mamy remis!');
     } else {

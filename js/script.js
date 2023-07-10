@@ -1,3 +1,6 @@
+
+let counterCP = 0;
+let counerPL = 0;
 function playGame(playerInput) {
 
     clearMessages();
@@ -11,6 +14,7 @@ function playGame(playerInput) {
 
     printMessage('Twój ruch to: ' + playerMove);
     displayResult(computerMove, playerMove);
+    scoreCounter(counterCP, counerPL);
 
 }
 

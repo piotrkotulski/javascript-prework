@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.countWinns {
+  display: flex;
+  align-items: center;
+  font-family: "Caveat", cursive;
+}
+.countWinns div {
+  font-size: 30px;
+}
+.countWinns img {
+  max-width: 200px;
+  aspect-ratio: 1;
+  margin: 0 100px;
+}
+.countWinns #computerScore:before,
+.countWinns #playerScore:before {
+  content: "Score:";
+  margin-right: 10px;
+  position: relative;
+  font-size: 25px;
+}
+.countWinns #computerScore:after {
+  content: "CPU";
+  position: absolute;
+  top: 50px;
+  left: 240px;
+  font-size: 20px;
+}
+.countWinns #playerScore:after {
+  content: "ME";
+  position: absolute;
+  top: 50px;
+  right: 240px;
+  font-size: 20px;
+}
+
+.gameButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 50px 0;
+}
+.gameButtons button {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.gameButtons button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+.gameButtons button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+#messages {
+  font-size: 20px;
+}
+#messages div {
+  font-family: Neucha, sans-serif;
+  padding: 20px 40px;
+}
+#messages div:nth-of-type(2) {
+  background-color: #b5e1f5;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtFQUNBLGFBQUE7QUNDRjs7QURFQTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0FDQ0Y7QURDRTtFQUNFLGVBQUE7QUNDSjtBREdFO0VBQ0UsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtBQ0RKO0FETUk7O0VBQ0UsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtBQ0hOO0FEUUk7RUFDRSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7QUNOTjtBRFlJO0VBQ0UsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDVk47O0FEZ0JFO0VBQ0UsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsVUFBQTtFQUNBLGNBQUE7QUNiSjtBRGVJO0VBQ0Usa0JBQUE7RUFDQSxzQkFBQTtFQUNBLHNCQUFBO0VBQ0EsMEJBQUE7RUFDQSxtQ0FBQTtFQUNBLHdCQUFBO0VBQ0EsMERBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbURBQUE7RUFDQSxzQkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0EscUJBQUE7RUFDQSwrQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGFBQUE7RUFDQSxnQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUNBQUE7RUFDQSxxQ0FBQTtFQUNBLHNDQUFBO0VBQ0Esa0NBQUE7RUFDQSxtQ0FBQTtFQUNBLHNCQUFBO09BQUEsaUJBQUE7RUFDQSx5QkFBQTtFQUNBLDBCQUFBO0FDYk47QURnQkk7RUFDRSwrQ0FBQTtFQUNBLGlDQUFBO0FDZE47QURpQkk7RUFDRSwrQ0FBQTtBQ2ZOOztBRG1CRTtFQUNFLGVBQUE7QUNoQko7QURrQkk7RUFFRSwrQkFBQTtFQUNBLGtCQUFBO0FDakJOO0FEbUJNO0VBQ0UseUJBQUE7QUNqQlIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

@@ -1,36 +1,41 @@
 
-let counterCP = 0;
-let counerPL = 0;
-function playGame(playerInput) {
-
-    clearMessages();
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-    let computerMove = getMoveName(randomNumber);
+    let counterCP = 0;
+    let counerPL = 0;
+    {
+    const playGame = function (playerInput) {
 
 
-    printMessage('Mój ruch to: ' + computerMove);
-    let playerMove = getMoveName(playerInput);
+        clearMessages();
+        let randomNumber = Math.floor(Math.random() * 3 + 1);
+        let computerMove = getMoveName(randomNumber);
 
 
-    printMessage('Twój ruch to: ' + playerMove);
-    displayResult(computerMove, playerMove);
-    scoreCounter(counterCP, counerPL);
+        printMessage('Mój ruch to: ' + computerMove);
+        let playerMove = getMoveName(playerInput);
 
-}
 
-let rockBtt = document.getElementById('play-rock');
-let paperBtt = document.getElementById('play-paper');
-let scissorsBtt = document.getElementById('play-scissors');
+        printMessage('Twój ruch to: ' + playerMove);
+        displayResult(computerMove, playerMove);
+        scoreCounter(counterCP, counerPL);
 
-rockBtt.addEventListener('click', function () {
-    playGame(1)
-});
-paperBtt.addEventListener('click', function () {
-    playGame(2)
-});
-scissorsBtt.addEventListener('click', function () {
-    playGame(3);
-});
+    }
+
+    const rockBtt = document.getElementById('play-rock');
+    const paperBtt = document.getElementById('play-paper');
+    const scissorsBtt = document.getElementById('play-scissors');
+
+    rockBtt.addEventListener('click', function () {
+        playGame(1)
+    });
+    paperBtt.addEventListener('click', function () {
+        playGame(2)
+    });
+    scissorsBtt.addEventListener('click', function () {
+        playGame(3);
+    });
+
+    }
+
 
 
 

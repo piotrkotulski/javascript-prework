@@ -5,8 +5,8 @@ function printMessage(msg){
 }
 
 function scoreCounter(scoreCp, scorePl){
-    let cp = document.getElementById('computerScore');
-    let pl = document.getElementById('playerScore');
+    const cp = document.getElementById('computerScore');
+    const pl = document.getElementById('playerScore');
     cp.innerHTML = scoreCp;
     pl.innerHTML = scorePl;
 }

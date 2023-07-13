@@ -1,28 +1,26 @@
 
-    let counterCP = 0;
-    let counerPL = 0;
-    {
+{
     const playGame = function (playerInput) {
 
-
         clearMessages();
-        let randomNumber = Math.floor(Math.random() * 3 + 1);
-        let computerMove = getMoveName(randomNumber);
+        const randomNumber = Math.floor(Math.random() * 3 + 1);
+        const computerMove = getMoveName(randomNumber);
 
 
         printMessage('Mój ruch to: ' + computerMove);
-        let playerMove = getMoveName(playerInput);
+        const playerMove = getMoveName(playerInput);
 
 
         printMessage('Twój ruch to: ' + playerMove);
         displayResult(computerMove, playerMove);
-        scoreCounter(counterCP, counerPL);
-
     }
+
 
     const rockBtt = document.getElementById('play-rock');
     const paperBtt = document.getElementById('play-paper');
     const scissorsBtt = document.getElementById('play-scissors');
+
+
 
     rockBtt.addEventListener('click', function () {
         playGame(1)
@@ -33,8 +31,7 @@
     scissorsBtt.addEventListener('click', function () {
         playGame(3);
     });
-
-    }
+}
 
 
 
